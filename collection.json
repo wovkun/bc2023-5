@@ -1,0 +1,83 @@
+{
+	"info": {
+		"_postman_id": "71792f34-9409-407f-89ce-4fe55eb81300",
+		"name": "Lab5",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "30940800"
+	},
+	"item": [
+		{
+			"name": "/notes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/notes"
+			},
+			"response": []
+		},
+		{
+			"name": "/UploadForm.html",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/UploadForm.html"
+			},
+			"response": []
+		},
+		{
+			"name": "/upload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "note_name",
+							"value": "Money",
+							"type": "text"
+						},
+						{
+							"key": "note",
+							"value": "GG",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost:8000/upload"
+			},
+			"response": []
+		},
+		{
+			"name": "/notes/note_name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/notes/Money"
+			},
+			"response": []
+		},
+		{
+			"name": "/notes/note_name",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "DD"
+				},
+				"url": "http://localhost:8000/notes/Money"
+			},
+			"response": []
+		},
+		{
+			"name": "/notes/note_name",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8000/notes/Money"
+			},
+			"response": []
+		}
+	]
+}
